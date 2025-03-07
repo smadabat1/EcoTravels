@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselApi} from "@/components/ui/carousel";
 import amritsar from "@/assets/carousel/amritsar.jpg";
 import delhi from "@/assets/carousel/delhi.jpg";

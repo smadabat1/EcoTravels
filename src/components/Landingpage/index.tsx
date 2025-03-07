@@ -1,6 +1,5 @@
 import MainPageIndex from "./MainContainer"
 import PopularPlacesIndex from "./PopularPlaces"
-import ReviewIndex from "./Reviews"
 import { BentoGridSecondDemo } from "./Stats"
 
 export default function LandingPageIndex() {
