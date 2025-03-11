@@ -26,10 +26,10 @@ export default function PopularPlacesIndex() {
           <p className="font-light text-muted-foreground">Unleash Your Wanderlust with EcoTravels</p>
         </div>
         <div className="flex flex-row items-center gap-x-4">
-          <div className="p-3 flex justify-center items-center rounded-full bg-gray-100 cursor-pointer" onClick={prevHandler}>
-            <ChevronLeft />
+          <div className="p-3 flex justify-center items-center rounded-full bg-gray-400 cursor-pointer" onClick={prevHandler}>
+            <ChevronLeft className="text-white"/>
           </div>
-          <div className="p-4 flex justify-center items-center rounded-full cursor-pointer bg-black text-white" onClick={nextHandler}>
+          <div className="p-4 flex justify-center items-center rounded-full cursor-pointer bg-foreground text-background" onClick={nextHandler}>
             <ChevronRight />
           </div>
         </div>
