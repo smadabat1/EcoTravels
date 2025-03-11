@@ -31,7 +31,7 @@ export default function Menu() {
     },
   ];
   return (
-    <div className="flex flex-row gap-8">
+    <div className="hidden md:flex flex-row gap-8">
       {list.map((item) => (
         <div
           key={item.id}

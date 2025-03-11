@@ -3,11 +3,11 @@ import { useNavigate } from "@tanstack/react-router";
 export default function Footer() {
   const navigate = useNavigate({ from: "/" });
   return (
-    <div className="flex flex-row py-14 justify-between items-center">
+    <div className="flex flex-col items-center gap-y-4 md:flex-row md:py-14 md:justify-between md:items-center">
       <div>
         <p>© 2025 EcoTravels. All Rights Reserved</p>
       </div>
-      <div className="flex flex-row items-center gap-x-12 select-none">
+      <div className="flex flex-col items-center gap-y-2 md:flex-row md:items-center gap-x-12 select-none">
         <div className="cursor-pointer">
           <p>Terms of Service</p>
         </div>
