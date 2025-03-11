@@ -1,5 +1,5 @@
 import mainImage from "@/assets/image2.jpg";
-import plane from "@/assets/plane1.png";
+import plane from "@/assets/plane1.webp";
 import { FlipWords } from "@/components/ui/flip-words";
 
 export default function MainPageIndex() {
