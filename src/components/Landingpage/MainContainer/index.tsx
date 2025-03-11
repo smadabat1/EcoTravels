@@ -27,7 +27,7 @@ export default function MainPageIndex() {
         <img
           src={plane}
           loading="lazy"
-          className="w-[400px] h-[400px] transition-all duration-300 ease-out xl:w-[1000px] lg:h-[1000px] object-contain opacity-98 mix-blend-normal"
+          className="w-[400px] h-[400px] transition-all duration-300 ease-out hidden 2xl:block 2xl:w-[1000px] 2xl:h-[1000px] object-contain opacity-98 mix-blend-normal"
         />
       </div>
     </div>
