@@ -10,7 +10,7 @@ export default function MainPageIndex() {
         <img src={mainImage} loading="lazy" className="w-full h-full object-cover light:mix-blend-multiply" />
       </div>
 
-      <div className="absolute left-48 top-48 flex flex-col gap-y-8 text-black">
+      <div className="absolute left-48 top-48 flex flex-col gap-y-8 text-black select-none">
         <p>ELEVATE YOUR TRAVEL JOURNEY</p>
         <div className="transition-all duration-300 ease-out">
           <FlipWords words={words} className="text-5xl lg:text-8xl font-bold text-primary dark:text-primary" />

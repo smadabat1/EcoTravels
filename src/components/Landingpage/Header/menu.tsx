@@ -35,7 +35,7 @@ export default function Menu() {
       {list.map((item) => (
         <div
           key={item.id}
-          className="group relative cursor-pointer hover:bg-primary/20 px-4 py-2 rounded-full transition-all duration-300 ease-in-out"
+          className="group relative cursor-pointer hover:bg-primary/20 px-4 py-2 rounded-full transition-all duration-300 ease-in-out select-none"
           onClick={() => {
             navigate({ to: item.url });
           }}

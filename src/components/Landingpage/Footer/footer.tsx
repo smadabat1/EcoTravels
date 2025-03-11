@@ -7,7 +7,7 @@ export default function Footer() {
       <div>
         <p>© 2025 EcoTravels. All Rights Reserved</p>
       </div>
-      <div className="flex flex-row items-center gap-x-12">
+      <div className="flex flex-row items-center gap-x-12 select-none">
         <div className="cursor-pointer">
           <p>Terms of Service</p>
         </div>
