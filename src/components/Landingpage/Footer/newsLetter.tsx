@@ -8,7 +8,7 @@ export default function NewsLetter() {
             <p className="font-bold text-2xl">exclusive deals and news?</p>
         </div>
         <div className="flex flex-col gap-y-2 md:flex-row md:items-center gap-x-4">
-            <Input className="rounded-xl h-12 w-96" placeholder="john.doe@email.com"/>
+            <Input className="rounded-xl h-12 md:w-96" placeholder="john.doe@email.com"/>
             <Button className="rounded-xl h-12 w-48">Subscribe</Button>
         </div>
     </div>
