@@ -7,7 +7,7 @@ export default function MainPageIndex() {
   return (
     <div className="h-[calc(100vh-6rem)] p-8 pt-4 relative overflow-hidden">
       <div className="w-full h-full overflow-hidden" style={{ borderRadius: 80 }}>
-        <img src={mainImage} className="w-full h-full object-cover light:mix-blend-multiply" />
+        <img src={mainImage} loading="lazy" className="w-full h-full object-cover light:mix-blend-multiply" />
       </div>
 
       <div className="absolute left-48 top-48 flex flex-col gap-y-8 text-black">
@@ -26,6 +26,7 @@ export default function MainPageIndex() {
       <div className="hidden absolute right-0 top-[-100px] lg:flex flex-col gap-y-8">
         <img
           src={plane}
+          loading="lazy"
           className="w-[400px] h-[400px] transition-all duration-300 ease-out xl:w-[1000px] lg:h-[1000px] object-contain opacity-98 mix-blend-normal"
         />
       </div>

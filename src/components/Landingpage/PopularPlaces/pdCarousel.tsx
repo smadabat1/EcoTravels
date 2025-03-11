@@ -92,7 +92,7 @@ export default function PdCarousel({ setApi }: { setApi: (api: CarouselApi) => v
             <div className="p-1">
               <div className="p-4 flex flex-col gap-y-4">
                 <div className="w-full h-48 border rounded-xl overflow-hidden">
-                    <img src={city.img} />
+                    <img src={city.img} loading="lazy" />
                 </div>
                 <div className="flex flex-row items-center justify-between cursor-pointer group">
                     <p className="font-bold">{city.name}</p>
