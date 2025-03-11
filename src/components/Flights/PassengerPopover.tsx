@@ -32,7 +32,6 @@ export default function PassengerPopover({
   ];
 
   const openPopover = () => setOpen(true);
-  const closePopover = () => setOpen(false);
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
