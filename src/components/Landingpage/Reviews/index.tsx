@@ -83,7 +83,7 @@ const ReviewCard = ({ img, name, username, body }: { img: string; name: string; 
 
 export function ReviewsIndex() {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4 p-8">
       <div className="flex flex-col gap-y-2">
         <p className="text-3xl font-bold">Rave Reviews from Our Happy Travelers!</p>
         <p className="font-light text-muted-foreground">
@@ -91,7 +91,7 @@ export function ReviewsIndex() {
         </p>
       </div>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-        <Marquee className="[--duration:100s]">
+        <Marquee className="[--duration:100s]" repeat={10}>
           {reviews.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}

@@ -3,6 +3,7 @@ import MainPageIndex from "./MainContainer"
 import PopularPlacesIndex from "./PopularPlaces"
 import { BentoGridSecondDemo } from "./Stats"
 import { ReviewsIndex } from "./Reviews";
+import FlowIndex from "./Flow";
 
 export default function LandingPageIndex() {
   useEffect(() => {
@@ -16,6 +17,7 @@ export default function LandingPageIndex() {
         <PopularPlacesIndex />
         <BentoGridSecondDemo />
         <ReviewsIndex />
+        <FlowIndex />
     </div>
   )
 }
