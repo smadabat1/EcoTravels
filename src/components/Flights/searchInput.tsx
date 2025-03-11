@@ -29,10 +29,10 @@ export default function SearchInput() {
   };
 
   return (
-    <div className="grid grid-cols-8 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-8 gap-2">
       <div
         className={cn(
-          "col-span-2 bg-gray-100 p-4 rounded-md flex flex-col gap-y-2 transition-all duration-100 ease-in-out border-2",
+          "md:col-span-2 bg-gray-100 p-4 rounded-md flex flex-col gap-y-2 transition-all duration-100 ease-in-out border-2",
           isElementFocused("from") ? "border-primary" : ""
         )}
       >
@@ -50,7 +50,7 @@ export default function SearchInput() {
       </div>
       <div
         className={cn(
-          "col-span-2 bg-gray-100 p-4 rounded-md flex flex-col gap-y-2 transition-all duration-100 ease-in-out border-2",
+          "md:col-span-2 bg-gray-100 p-4 rounded-md flex flex-col gap-y-2 transition-all duration-100 ease-in-out border-2",
           isElementFocused("to") ? "border-primary" : ""
         )}
       >

@@ -7,7 +7,7 @@ export default function SearchBar() {
   const setMode = useSearchBarStore((state) => state.setMode);
   
   return (
-    <div className="bg-card shadow-xl rounded-xl p-4 h-48 w-full flex flex-col gap-y-4">
+    <div className="bg-card shadow-xl rounded-xl p-4 md:min-h-48 w-full flex flex-col gap-y-4">
         <div className="flex flex-row gap-x-4">
             <div className={cn("px-4 py-2 rounded-full border-2 transition-all duration-200 ease-in-out cursor-pointer", mode === "oneway" ? "border-primary": "")} onClick={() => setMode("oneway")}>
                 <p>One Way</p>
