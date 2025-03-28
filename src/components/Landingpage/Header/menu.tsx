@@ -1,4 +1,5 @@
 import { useNavigate } from "@tanstack/react-router";
+import { motion } from "framer-motion";
 
 type MenuItemItem = {
   id: number;
@@ -31,7 +32,14 @@ export default function Menu() {
     },
   ];
   return (
-    <div className="hidden md:flex flex-row gap-8">
+    <motion.div
+      className={`hidden md:flex flex-row gap-8`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{
+        opacity: 0,
+      }}
+    >
       {list.map((item) => (
         <div
           key={item.id}
@@ -43,6 +51,6 @@ export default function Menu() {
           <p>{item.title}</p>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 }

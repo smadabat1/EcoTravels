@@ -91,7 +91,7 @@ export function ReviewsIndex() {
         </p>
       </div>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-        <Marquee className="[--duration:100s]" repeat={10}>
+        <Marquee className="[--duration:100s]" pauseOnHover repeat={10}>
           {reviews.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
