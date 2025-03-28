@@ -10,7 +10,7 @@ export default function FlowIndex() {
     offset: ["start end", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.05, 1.1]);
+  //const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.05, 1.1]);
   const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 0.8, 0.6]);
 
   const pulsateVariants: any = {

@@ -1,4 +1,3 @@
-import plane4 from "@/assets/plane4.png";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Menu from "./menu";
