@@ -23,7 +23,7 @@ export default function CalendarPopover({
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <div
-          className={cn("bg-gray-100 p-4 rounded-md transition-all duration-100 ease-in-out border-2 flex flex-col justify-between", isElementFocused("depart") ? "border-primary" : "")}
+          className={cn("bg-gray-100 p-4 rounded-md transition-all duration-100 ease-in-out border-2 flex flex-col justify-between select-none", isElementFocused("depart") ? "border-primary" : "")}
           tabIndex={0}
           onClick={() => openPopover()}
           onFocus={() => {

@@ -3,9 +3,11 @@ import plane from "@/assets/plane1.webp";
 import { FlipWords } from "@/components/ui/flip-words";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useNavigate } from "@tanstack/react-router";
 
 export default function MainPageIndex() {
   const words = ["Experience", "Discover", "Enjoy", "Feel"];
+  const navigate = useNavigate();
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -21,7 +23,7 @@ export default function MainPageIndex() {
   const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 0.8, 0.6]);
 
   return (
-    <div ref={container} className="h-[calc(100vh-6rem)] md:p-0 relative overflow-hidden rounded-xl">
+    <div ref={container} className="h-[calc(100vh-7rem)] top-24 md:p-0 relative overflow-hidden rounded-xl">
       <motion.div
         style={{
           y: yMovement,
@@ -40,7 +42,9 @@ export default function MainPageIndex() {
           <p className="text-5xl lg:text-8xl font-bold text-black">The magic of</p>
           <p className="text-5xl lg:text-8xl font-bold text-black">Flight!</p>
         </div>
-        <div className="w-48">
+        <div className="w-48" onClick={() => {
+            navigate({ to: "/flights" });
+          }}>
           <div className="rounded-full px-8 py-4 z-50 cursor-pointer bg-primary w-auto hover:shadow-sm text-primary-foreground">Book a Trip Now</div>
         </div>
       </div>

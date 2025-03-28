@@ -5,9 +5,7 @@ import FooterIndex from "./Footer";
 export default function LandingPageLayout() {
   return (
     <>
-      <header className="h-24 bg-background">
-        <Header />
-      </header>
+      <Header />
       <main>
         <Outlet />
       </main>

@@ -68,7 +68,7 @@ export default function SearchInput() {
       <ReturnCalendarPopover setFocuseElement={setFocuseElement} isElementFocused={isElementFocused} />
       <PassengerPopover setFocuseElement={setFocuseElement} isElementFocused={isElementFocused} />
       <div
-        className="bg-primary p-4 rounded-md flex justify-center items-center gap-x-2"
+        className="bg-primary p-4 rounded-md flex justify-center items-center gap-x-2 cursor-pointer"
         tabIndex={0}
         onFocus={() => setFocuseElement("select")}
         onBlur={() => setFocuseElement("")}
