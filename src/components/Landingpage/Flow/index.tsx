@@ -27,8 +27,6 @@ export default function FlowIndex() {
     },
   };
 
-  const md = useTransform(scrollYProgress, [0,1], [0, -50]);
-  const lg = useTransform(scrollYProgress, [0,1], [0, -200]);
   return (
     <div className="flex flex-col gap-y-12 md:p-8">
       <div className="flex flex-col gap-y-2 items-center">
@@ -38,11 +36,11 @@ export default function FlowIndex() {
         </p>
       </div>
       <div ref={container} className="grid grid-cols-1 md:grid-cols-3 md:items-end gap-4 md:gap-0">
-        <motion.div style={{y:lg, opacity: opacity}} className="bg-bento-1 p-4 rounded-xl md:rounded-l-xl h-[300px] flex flex-col justify-between">
+        <motion.div style={{opacity: opacity}} className="bg-bento-1 p-4 rounded-xl md:rounded-l-xl h-[300px] flex flex-col justify-between">
           <MapPin size={28} />
           <p className="font-bold text-2xl">Find your destination</p>
         </motion.div>
-        <motion.div style={{y:md, opacity: opacity}} className="bg-bento-2 p-4 rounded-xl md:rounded-t-xl h-[500px] flex flex-col justify-evenly relative overflow-hidden">
+        <motion.div style={{opacity: opacity}} className="bg-bento-2 p-4 rounded-xl md:rounded-t-xl h-[500px] flex flex-col justify-evenly relative overflow-hidden">
           <Ticket className="text-primary-foreground" size={28} />
           <img src={flow} loading="lazy" className="absolute right-[-80px] top-[-80px] rounded-full h-96 w-96 mix-blend-overlay shadow-sm" />
           <div>
@@ -61,7 +59,7 @@ export default function FlowIndex() {
             </motion.div>
           </div>
         </motion.div>
-        <motion.div style={{y:lg, opacity: opacity}} className="bg-bento-1 p-4 rounded-xl md:rounded-r-xl h-[300px] flex flex-col justify-between">
+        <motion.div style={{opacity: opacity}} className="bg-bento-1 p-4 rounded-xl md:rounded-r-xl h-[300px] flex flex-col justify-between">
           <Wallet size={28} />
           <div className="flex flex-col gap-y-2">
             <p className="font-bold text-2xl">Pay &</p>
