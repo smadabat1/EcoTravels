@@ -17,9 +17,9 @@ export default function MainPageIndex() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="h-screen w-full md:p-0 relative overflow-hidden z-200"
+        className="h-screen w-full md:p-0 pt-48 relative overflow-hidden z-200"
       >
-        <div className="absolute inset-0 md:p-0 flex flex-col gap-y-12 justify-center items-center gap-y-8 text-black select-none">
+        <div className="absolute inset-0 p-4 md:p-0 flex flex-col gap-y-12 justify-center items-center gap-y-8 text-black select-none">
           <div className="transition-all duration-300 ease-out">
             <FlipWords words={words} className="text-5xl 2xl:text-8xl self-center font-bold text-primary dark:text-primary" />
             <p className="text-5xl 2xl:text-8xl font-bold text-black">The magic of Flight!</p>
