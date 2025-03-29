@@ -36,14 +36,13 @@ export default function Menu() {
       className={`hidden md:flex flex-row gap-8`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{
-        opacity: 0,
-      }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
     >
       {list.map((item) => (
         <div
           key={item.id}
-          className="group relative cursor-pointer hover:bg-primary/20 px-4 py-2 rounded-full transition-all duration-300 ease-in-out select-none"
+          className="group relative cursor-pointer hover:bg-gray-200/50 px-4 py-2 rounded-full transition-all duration-300 ease-in-out select-none"
           onClick={() => {
             navigate({ to: item.url });
           }}

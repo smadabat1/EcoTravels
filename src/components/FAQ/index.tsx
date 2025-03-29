@@ -82,7 +82,7 @@ export default function FAQIndex() {
     },
   ];
   return (
-    <div className="px-4 md:px-24 mt-4 min-h-[calc(100vh-6rem)] flex flex-col justify-center items-center gap-y-12">
+    <div className="px-4 md:px-24 pt-54 min-h-[calc(100vh-6rem)] flex flex-col justify-center items-center gap-y-12">
       <div className="flex justify-center">
         <p className="self-center  font-bold text-2xl">Frequently Asked Question's</p>
       </div>
