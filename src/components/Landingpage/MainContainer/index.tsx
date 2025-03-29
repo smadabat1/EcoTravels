@@ -25,8 +25,8 @@ export default function MainPageIndex() {
         <div className="w-full h-full p-4 md:p-0 flex flex-col items-center justify-between gap-y-8 select-none">
           <div className="w-full h-full flex flex-col gap-y-12 justify-center items-center">
             <div className="transition-all duration-300 ease-out">
-              <FlipWords words={words} className="text-5xl 2xl:text-8xl self-center font-bold text-primary dark:text-primary" />
-              <p className="text-5xl 2xl:text-8xl font-bold text-black">The magic of Flight!</p>
+              <FlipWords words={words} className="text-5xl 2xl:text-6xl self-center font-bold text-primary dark:text-primary" />
+              <p className="text-5xl 2xl:text-6xl font-bold text-black">The magic of Flight!</p>
             </div>
             <p className="2xl:text-xl font-light text-neutral-600">50,000+ Travelers | 45 Countries | Endless Possibilities</p>
             <div
