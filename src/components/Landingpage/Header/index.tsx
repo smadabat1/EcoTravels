@@ -1,13 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import Menu from "./menu";
 import { useNavigate } from "@tanstack/react-router";
+import useScrollAwareHeader from "./scrollAwareHeader";
 
 export default function Header() {
   const navigate = useNavigate();
-  const [isSticky, setIsSticky] = useState<boolean>(false);
-  const [isVisible, setIsVisible] = useState<boolean>(true);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const { isSticky, isVisible } = useScrollAwareHeader();
 
   const headerVariants = {
     initial: { opacity: 1 },
@@ -16,30 +14,6 @@ export default function Header() {
       opacity: 0,
     },
   };
-
-  useEffect(() => {
-    setPrevScrollPos(window.scrollY);
-
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-
-      if (currentScrollPos > 50) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-
-      const isScrollingUp = prevScrollPos > currentScrollPos;
-
-      setIsVisible(isScrollingUp || currentScrollPos < 200);
-
-      setPrevScrollPos(currentScrollPos);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos]);
 
   return (
     <motion.header
