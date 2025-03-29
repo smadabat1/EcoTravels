@@ -41,7 +41,7 @@ export default function MainPageIndex() {
               </div>
             </div>
           </div>
-          <div className="w-screen flex flex-col-reverse md:flex-row gap-y-12 items-center p-8">
+          <div className="w-screen flex flex-col-reverse md:flex-row gap-y-6 items-center p-8">
             <div className="flex flex-row items-center gap-x-8 bg-card shadow-sm px-12 py-6 rounded-full self-auto">
               <p className="font-light text-muted-foreground text-sm">Follow</p>
               <div className="flex flex-row items-center gap-x-6">
