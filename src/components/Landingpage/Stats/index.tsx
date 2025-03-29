@@ -39,7 +39,7 @@ const items = [
     icon: <IconSignature className="h-4 w-4" />,
   },
   {
-    title: "World Travelers Discovering Us",
+    title: "World Travelers Discovering Us Every Week",
     description: "Hundreds of travel enthusiasts embark on their dream journeys with us weekly.",
     header: <NumberTickerWrapper value={7324} classes={"text-white"} />,
     className: "md:col-span-3 bg-bento-2 text-white",

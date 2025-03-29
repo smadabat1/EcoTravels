@@ -19,12 +19,12 @@ export default function MainPageIndex() {
         }}
         className="h-screen w-full md:p-0 relative overflow-hidden z-200"
       >
-        <div className="absolute inset-0 p-4 md:p-0 flex flex-col gap-y-12 justify-center items-center gap-y-8 text-black select-none">
+        <div className="absolute inset-0 md:p-0 flex flex-col gap-y-12 justify-center items-center gap-y-8 text-black select-none">
           <div className="transition-all duration-300 ease-out">
-            <FlipWords words={words} className="text-5xl lg:text-8xl self-center font-bold text-primary dark:text-primary" />
-            <p className="text-5xl lg:text-8xl font-bold text-black">The magic of Flight!</p>
+            <FlipWords words={words} className="text-5xl 2xl:text-8xl self-center font-bold text-primary dark:text-primary" />
+            <p className="text-5xl 2xl:text-8xl font-bold text-black">The magic of Flight!</p>
           </div>
-          <p className="text-xl font-light text-neutral-600">50,000+ Travelers | 45 Countries | Endless Possibilities</p>
+          <p className="2xl:text-xl font-light text-neutral-600">50,000+ Travelers | 45 Countries | Endless Possibilities</p>
           <div
             className="w-48 md:w-96 flex justify-center items-center"
             onClick={() => {
