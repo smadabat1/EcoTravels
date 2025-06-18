@@ -28,7 +28,15 @@ export default function FlowIndex() {
   };
 
   return (
-    <div className="flex flex-col gap-y-12 md:p-8">
+    <motion.div
+      className="flex flex-col gap-y-12 md:p-8"
+      initial={{ opacity: 0.0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+    >
       <div className="flex flex-col gap-y-2 items-center">
         <p className="text-3xl font-bold">Journey To The Skies Made Simple!</p>
         <p className="font-light text-muted-foreground">
@@ -36,11 +44,14 @@ export default function FlowIndex() {
         </p>
       </div>
       <div ref={container} className="grid grid-cols-1 md:grid-cols-3 md:items-end gap-4 md:gap-0">
-        <motion.div style={{opacity: opacity}} className="bg-bento-1 p-4 rounded-xl md:rounded-l-xl h-[300px] flex flex-col justify-between">
+        <motion.div style={{ opacity: opacity }} className="bg-bento-1 p-4 rounded-xl md:rounded-l-xl h-[300px] flex flex-col justify-between">
           <MapPin size={28} />
           <p className="font-bold text-2xl">Find your destination</p>
         </motion.div>
-        <motion.div style={{opacity: opacity}} className="bg-bento-2 p-4 rounded-xl md:rounded-t-xl h-[500px] flex flex-col justify-evenly relative overflow-hidden">
+        <motion.div
+          style={{ opacity: opacity }}
+          className="bg-bento-2 p-4 rounded-xl md:rounded-t-xl h-[500px] flex flex-col justify-evenly relative overflow-hidden"
+        >
           <Ticket className="text-primary-foreground" size={28} />
           <img src={flow} loading="lazy" className="absolute right-[-80px] top-[-80px] rounded-full h-96 w-96 mix-blend-overlay shadow-sm" />
           <div>
@@ -59,7 +70,7 @@ export default function FlowIndex() {
             </motion.div>
           </div>
         </motion.div>
-        <motion.div style={{opacity: opacity}} className="bg-bento-1 p-4 rounded-xl md:rounded-r-xl h-[300px] flex flex-col justify-between">
+        <motion.div style={{ opacity: opacity }} className="bg-bento-1 p-4 rounded-xl md:rounded-r-xl h-[300px] flex flex-col justify-between">
           <Wallet size={28} />
           <div className="flex flex-col gap-y-2">
             <p className="font-bold text-2xl">Pay &</p>
@@ -67,6 +78,6 @@ export default function FlowIndex() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }

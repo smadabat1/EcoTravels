@@ -49,7 +49,7 @@ export default function CountriesMarquee() {
       <Marquee className="[--duration:100s]" repeat={20}>
         {countriesList.map((c) => (
           <div key={c.id} className="mx-12 flex flex-row items-center gap-x-4">
-            <div className="h-8 w-8 md:h-10 md:w-10 overflow-hidden rounded-md">
+            <div className="h-8 w-8 overflow-hidden rounded-md">
               <img alt={c.title} src={c.url} className="grayscale w-full h-full object-cover" />
             </div>
 

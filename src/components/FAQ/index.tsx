@@ -14,6 +14,7 @@ export default function FAQIndex() {
       behavior: "smooth",
     });
   }, []);
+
   const items: faqType[] = [
     {
       id: 1,
@@ -81,10 +82,11 @@ export default function FAQIndex() {
         "You can cancel the ticket from website using these steps: Manage Booking-> Enter your Booking ID -> Enter OTP sent on your registered mobile number-> Click on Cancel. Once you do this, your booking will be cancelled instantly. In case of web check-in, call or email us before cancelling. If you are not able to do so, then you need to either send us an email on support@ecotravels.travel or call 8080 266 266 to cancel your flight reservations. We permit ticket cancellation prior to your flight, but the cancellation policies differ from airline to airline.",
     },
   ];
+  
   return (
     <div className="px-4 md:px-24 pt-54 min-h-[calc(100vh-6rem)] flex flex-col justify-center items-center gap-y-12">
       <div className="flex justify-center">
-        <p className="self-center  font-bold text-2xl">Frequently Asked Question's</p>
+        <p className="self-center font-bold text-2xl">Frequently Asked Question's</p>
       </div>
       <Accordion type="single" collapsible className="w-full">
         {items.map((item) => (
